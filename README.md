@@ -11,7 +11,8 @@ This project analyzes movie reviews and predicts whether the sentiment is **posi
 
 ## This movie was an absolute disaster. Terrible acting, a nonsensical plot, and completely wasted my time. I regret watching it
 
-![IMDb Sentiment Analyzer](screenshot.png)
+
+<img width="1079" height="682" alt="Ekran Resmi 2025-10-07 20 46 58" src="https://github.com/user-attachments/assets/5dd76116-e4b8-4d9b-8c2f-e5943d0e5f2a" />
 
 ## Files
 
