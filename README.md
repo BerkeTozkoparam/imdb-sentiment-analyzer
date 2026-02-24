@@ -1,29 +1,51 @@
-# IMDb Sentiment Analyzer
+# 🎬 IMDb Sentiment Analyzer
 
-This project analyzes movie reviews and predicts whether the sentiment is **positive** or **negative**. The model is built using Keras and the user interface is implemented with Gradio for an easy-to-use web application.
+A deep learning web app that predicts whether a movie review is **positive** or **negative**, built with Keras and Gradio.
+
+## Demo
+
+![App Screenshot](https://github.com/user-attachments/assets/5dd76116-e4b8-4d9b-8c2f-e5943d0e5f2a)
 
 ## Features
 
-- User-friendly interface for entering movie reviews.
-- Predicts whether the review is **positive** or **negative**.
-- Displays the probability score of the prediction.
-- Shareable interface using Gradio.
+- Enter any movie review and get instant sentiment prediction
+- Displays confidence probability score
+- Trained deep learning model (Keras)
+- Simple and shareable web interface via Gradio
 
-## This movie was an absolute disaster. Terrible acting, a nonsensical plot, and completely wasted my time. I regret watching it
+## Tech Stack
 
-
-<img width="1079" height="682" alt="Ekran Resmi 2025-10-07 20 46 58" src="https://github.com/user-attachments/assets/5dd76116-e4b8-4d9b-8c2f-e5943d0e5f2a" />
-
-## Files
-
-- `imdb_app.py` : Python application that launches the Gradio interface.
-- `best_model.h5` : Trained Keras sentiment analysis model.
-- `requirements.txt` : Python packages required for this project.
+| Layer | Tool |
+|---|---|
+| Model | Keras (saved as `best_model.h5`) |
+| Interface | Gradio |
+| Language | Python |
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your_username>/<repository_name>.git
-   cd <repository_name>
+```bash
+git clone https://github.com/BerkeTozkoparan/imdb-sentiment-analyzer.git
+cd imdb-sentiment-analyzer
+pip install -r requirements.txt
+python i̇mbd_app.py
+```
 
+## Requirements
+
+```
+tensorflow>=2.20.0
+keras>=3.10.0
+gradio==3.44.0
+numpy
+```
+
+## Usage
+
+1. Run the app
+2. Paste or type a movie review into the text box
+3. Click **Submit** to get the sentiment prediction and confidence score
+
+## Example
+
+> *"This movie was an absolute disaster. Terrible acting, a nonsensical plot, and completely wasted my time."*
+> → **Negative** (high confidence)
